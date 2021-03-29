@@ -5,3 +5,4 @@ y = torch.zeros(3, 2 ,5)
 
 print('x datatype : ', x.dtype)
 print('x datatype : ', y.dtype)
+print('x size : ', x.size())
