@@ -1,6 +1,7 @@
 import torch
 
-x = torch.empty(2 , 2, 3)
+x = torch.ones(3, 2 ,5)
+y = torch.zeros(3, 2 ,5)
 
-print('dimension of tensor x')
-print(x)
+print('x datatype : ', x.dtype)
+print('x datatype : ', y.dtype)
