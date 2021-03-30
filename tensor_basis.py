@@ -18,3 +18,13 @@ print(a)
 b= torch.from_numpy(a)
 print('after convery into tensor')
 print(b)
+
+# CPU and GPU
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+    x = torch.ones(5 , device = device)
+    # another example
+    y = torch.ones(5)
+    y = y.to(device)
+    # change the device to cpu 
+    y = y.to('cpu')
